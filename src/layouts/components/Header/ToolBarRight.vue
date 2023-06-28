@@ -5,7 +5,7 @@
       <Language id="language" />
       <SearchMenu id="searchMenu" />
       <ThemeSetting id="themeSetting" />
-      <Message id="message" />
+      <Message id="message" v-if="false"/>
       <Fullscreen id="fullscreen" />
     </div>
     <span class="username">{{ username }}</span>
@@ -25,7 +25,7 @@ import Fullscreen from "./components/Fullscreen.vue";
 import Avatar from "./components/Avatar.vue";
 
 const userStore = useUserStore();
-const username = computed(() => userStore.userInfo.name);
+const username = computed(() => userStore.userInfo.username);
 </script>
 
 <style scoped lang="scss">

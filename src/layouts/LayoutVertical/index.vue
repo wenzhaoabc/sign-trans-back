@@ -5,16 +5,11 @@
       <div class="aside-box" :style="{ width: isCollapse ? '65px' : '210px' }">
         <div class="logo flx-center">
           <img class="logo-img" src="@/assets/images/logo.svg" alt="logo" />
-          <span v-show="!isCollapse" class="logo-text">Geeker Admin</span>
+          <span v-show="!isCollapse" class="logo-text">Sign Hear</span>
         </div>
         <el-scrollbar>
-          <el-menu
-            :default-active="activeMenu"
-            :collapse="isCollapse"
-            :router="false"
-            :unique-opened="true"
-            :collapse-transition="false"
-          >
+          <el-menu :default-active="activeMenu" :collapse="isCollapse" :router="false" :unique-opened="true"
+            :collapse-transition="false">
             <SubMenu :menu-list="menuList" />
           </el-menu>
         </el-scrollbar>

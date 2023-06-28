@@ -1,6 +1,6 @@
 <template>
   <div class="footer flx-center">
-    <a href="https://github.com/HalseySpicy" target="_blank"> 2022 © Geeker-Admin By Geeker Technology. </a>
+    <a href="https://123.60.156.14" target="_blank"> 2023 © SignHear By Tongji University </a>
   </div>
 </template>
 

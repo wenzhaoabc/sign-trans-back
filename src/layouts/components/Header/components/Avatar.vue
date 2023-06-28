@@ -1,7 +1,7 @@
 <template>
   <el-dropdown trigger="click">
     <div class="avatar">
-      <img src="@/assets/images/avatar.gif" alt="avatar" />
+      <img :src="userStore.userInfo.avatar" alt="avatar" />
     </div>
     <template #dropdown>
       <el-dropdown-menu>
@@ -48,6 +48,7 @@ const logout = () => {
 
     // 2.清除 Token
     userStore.setToken("");
+    userStore.$reset();
 
     // 3.重定向到登陆页
     router.replace(LOGIN_URL);
