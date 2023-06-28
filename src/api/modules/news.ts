@@ -1,13 +1,15 @@
 import { PORT3 } from "@/api/config/servicePort";
 import http from "@/api";
-import { Word } from "../interface";
+import { Word, News } from "@/api/interface";
 
 /**
  * 新闻公告模块
  */
 
 // 获取公告列表
-
+export const getAllNewsAPI = () => {
+    return http.get<News.ResNews[]>(PORT3 + "/news-list")
+}
 
 // 添加新闻公告
 export const publishNewsAPI = (params: any) => {

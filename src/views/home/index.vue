@@ -79,7 +79,13 @@ import { ref, onMounted } from "vue";
 import { getSystemInfoAPI } from "@/api/modules/news"
 import Pie from "@/views/home/components/pie.vue"
 
-const statisticData = ref();
+const statisticData = ref({
+  user: 0,
+  online_user: 0,
+  cpu: 80,
+  word: 50,
+  count: 10
+});
 
 const pieRef = ref();
 const pieData = [

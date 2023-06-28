@@ -92,7 +92,7 @@
     {
       "path": "/news",
       "name": "news",
-      "redirect": "/news/edit",
+      "redirect": "/news/all",
       "meta": {
         "icon": "Bell",
         "title": "公告管理",
@@ -103,6 +103,20 @@
         "isKeepAlive": true
       },
       "children": [
+        {
+          "path": "/news/all",
+          "name": "newsList",
+          "component": "/news/index",
+          "meta": {
+            "icon": "Document",
+            "title": "新闻列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
         {
           "path": "/news/edit",
           "name": "newsEdit",

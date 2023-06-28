@@ -3,7 +3,7 @@
   <Tabs v-if="tabs" />
   <el-main>
     <router-view v-slot="{ Component, route }">
-      <transition appear name="fade-transform" mode="out-in">
+      <transition appear name="fade-transform">
         <keep-alive :include="keepAliveName">
           <component :is="Component" v-if="isRouterShow" :key="route.fullPath" />
         </keep-alive>

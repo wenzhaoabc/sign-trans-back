@@ -55,6 +55,18 @@ export namespace Word {
   }
 }
 
+// 新闻资讯模块
+export namespace News {
+  export interface ResNews {
+    id: number,
+    author: string,
+    title: string,
+    content: string,
+    image: string,
+    created: string
+  }
+}
+
 // 用户管理模块
 export namespace User {
 
