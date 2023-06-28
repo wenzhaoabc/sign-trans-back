@@ -1,6 +1,6 @@
 // 请求响应参数（不包含data）
 export interface Result {
-  code: string;
+  code: number;
   msg: string;
 }
 
@@ -34,6 +34,24 @@ export namespace Login {
   }
   export interface ResAuthButtons {
     [key: string]: string[];
+  }
+}
+
+// 手语单词模块
+export namespace Word {
+  export interface ResStatis {
+    user: number,
+    online_user: number,
+    word: number,
+    news: number,
+    cpu: number,
+    count: number
+  }
+  export interface ResWordFreq {
+    id: number,
+    word: string,
+    type: string,
+    count: number
   }
 }
 
